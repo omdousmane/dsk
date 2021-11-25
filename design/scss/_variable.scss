@@ -1,0 +1,32 @@
+/*-----color -----*/
+
+/*=========primary color==========*/
+$primary: #ff7737;
+$primary-dark: darken(#5333ed, 10%);
+$primary-light: lighten(#5333ed, 20%);
+
+/*=========secondary color==========*/
+$secondary: #2cd4d4;
+$secondary-dark: darken(#2cd4d4, 20%);
+$secondary-light: lighten(#21d1d1, 20%);
+
+$text-secondary: #6e7076;
+$text-primary: #6e7076;
+
+/********btn*******/
+$btn-primary: #0cbaee;
+/*************font*************/
+$poppins: "Poppins", arial;
+$roboto: "Roboto", arial;
+$josefin-sans: "Josefin Sans", sans-serif;
+$montserrat: "Montserrat", sans-serif;
+$specimen: "Specimen", sans-serif;
+
+//$open-sans: "Open Sans", sans-serif;
+// $border-color: #dedede;
+// $text-secondary: #ededed;
+// $btn-primary: #0cbaee;
+// $title-primary: #401126;
+// $price-secondary: #ada9a9;
+// $bg-secondary: darken($secondary, 20%);
+// $bg-primary-two: #ffccc6;

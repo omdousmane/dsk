@@ -1,0 +1,163 @@
+<?php //include './includes/head.php'; 
+    ?>
+
+/* Logo */
+a#logo {
+display: inline-block;
+text-decoration: none;
+color: #147587;
+font-size: 1.5em;
+margin: 1.25em 0;
+transition: color 0.3s;
+}
+
+a#logo span {
+color: #fecb5f;
+transition: color 0.3s;
+}
+
+a#logo:hover {
+color: #14758790;
+}
+
+/* 80% d'opacité */
+a#logo:hover span {
+color: #fecb5f90;
+}
+
+/* 80% d'opacité */
+
+/* Masquage de la checkbox du menu responsive */
+input[type="checkbox"]#burger {
+display: none;
+}
+
+/* Style des menus (responsive ou non) */
+#menu ul {
+display: flex;
+width: 100%;
+margin: 0 auto;
+list-style: none;
+}
+
+#menu ul li {
+flex-basis: 20%;
+border-right: 1px solid #f3ece5;
+}
+
+#menu ul li:last-child {
+border: 0;
+}
+
+#menu ul li a {
+display: block;
+width: 100%;
+padding: 0.4em 1em;
+background: #147587;
+color: #f3ece5;
+text-align: center;
+text-decoration: none;
+transition: 0.5s;
+}
+
+#menu ul li a:hover {
+background: #fecb5f;
+color: #147587;
+}
+
+@media (max-width: 768px) {
+#menu ul {
+display: block;
+width: 100%;
+margin: 0 auto;
+list-style: none;
+position: absolute;
+left: 0;
+top: 5.6em;
+height: auto;
+max-height: 0%;
+overflow: hidden;
+transition: max-height 1s;
+}
+
+#menu ul li {
+border-bottom: 1px solid #f3ece5;
+}
+
+#menu ul li a {
+display: block;
+width: 100%;
+padding: 1em;
+background: #fa7e5c;
+text-align: center;
+text-decoration: none;
+}
+
+/* Menu burger */
+label {
+background: #147587;
+display: block;
+padding: 0.5em 0.8em;
+color: #f3ece5;
+text-align: center;
+font-weight: bold;
+cursor: pointer;
+}
+
+#menu-burger {
+position: absolute;
+z-index: 10;
+top: 1.5em;
+right: 1.5em;
+display: inline-block;
+cursor: pointer;
+display: block;
+}
+
+#menu-burger .bar1,
+#menu-burger .bar2,
+#menu-burger .bar3 {
+display: block;
+width: 24px;
+height: 3px;
+background-color: #f1f1f1;
+margin: 5px 0;
+transition: 0.4s;
+}
+
+#menu-burger:hover {
+opacity: 0.75;
+transition: 0.5s;
+}
+
+input[type="checkbox"]#burger:checked ~ label .bar1 {
+-webkit-transform: rotate(-45deg) translate(-4px, 8px);
+transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+input[type="checkbox"]#burger:checked ~ label .bar2 {
+opacity: 0;
+}
+
+input[type="checkbox"]#burger:checked ~ label .bar3 {
+-webkit-transform: rotate(45deg) translate(-4px, -8px);
+transform: rotate(45deg) translate(-6px, -6px);
+}
+
+/* Effet Slide/Swipe pleine page */
+#form1 input[type="checkbox"]:checked ~ #menu ul {
+max-height: 100%;
+transition: max-height 1s;
+}
+}
+
+
+<!-- <form id="form1"> -->
+<!-- <input type="checkbox" name="burger" id="burger" /> -->
+<!-- <label for="burger" id="menu-burger">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                    </label> -->
+
+<!-- <nav id="menu" class="header--menu"> -->

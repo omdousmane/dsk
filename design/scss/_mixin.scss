@@ -1,0 +1,37 @@
+/******mixin******/
+
+/************font***************/
+@mixin googleFonts($name) {
+  @import url("https://fonts.googleapis.com/css2?family=" + $name + "&display=swap");
+}
+
+/********button**************/
+@mixin btn-mixin($bg-color: $secondary) {
+  text-align: center;
+  background-color: $primary;
+  border: 2px solid $primary;
+  font-size: 14px;
+  line-height: 18px;
+  display: inline-block;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 15px 25px 20px;
+  border-radius: 27px;
+  -webkit-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 0.5s ease;
+}
+
+/********button**************/
+@mixin input-mixin($bg-color: $secondary) {
+  text-align: center;
+  background-color: $primary;
+  border: 2px solid $primary;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 10px 20px 15px;
+  border-radius: 15px;
+  -webkit-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 0.5s ease;
+}

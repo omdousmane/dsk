@@ -1,0 +1,15 @@
+@import "mixin";
+
+/*******input **************/
+.btn-input {
+  @include btn-mixin($bg-color: white);
+  outline: none;
+  background-color: $secondary;
+  border: none;
+  :focus {
+    outline: none;
+  }
+}
+::placeholder {
+  font-style: italic;
+}
